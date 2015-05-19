@@ -1,4 +1,4 @@
-angular.module('Rangular').config ($routeProvider) ->
+angular.module('Dk2').config ($routeProvider) ->
   $routeProvider
   .when '/', 
     templateUrl: '/app/index.html'

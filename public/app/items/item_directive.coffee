@@ -1,4 +1,4 @@
-angular.module('Rangular')
+angular.module('Dk2')
 .directive 'item', (Item) ->
   restrict: 'E'
   templateUrl: '/app/items/_item.html'

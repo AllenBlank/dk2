@@ -1,1 +1,1 @@
-angular.module 'Rangular', [ 'ngRoute' ]
+angular.module 'Dk2', [ 'ngRoute' ]
