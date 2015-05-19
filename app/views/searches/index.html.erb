@@ -1,0 +1,41 @@
+<h1>Listing searches</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Name field</th>
+      <th>Text filed</th>
+      <th>Type field</th>
+      <th>Format field</th>
+      <th>Color field</th>
+      <th>Color exact field</th>
+      <th>Sort by field</th>
+      <th>Sort direction field</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @searches.each do |search| %>
+      <tr>
+        <td><%= search.user_id %></td>
+        <td><%= search.name_field %></td>
+        <td><%= search.text_filed %></td>
+        <td><%= search.type_field %></td>
+        <td><%= search.format_field %></td>
+        <td><%= search.color_field %></td>
+        <td><%= search.color_exact_field %></td>
+        <td><%= search.sort_by_field %></td>
+        <td><%= search.sort_direction_field %></td>
+        <td><%= link_to 'Show', search %></td>
+        <td><%= link_to 'Edit', edit_search_path(search) %></td>
+        <td><%= link_to 'Destroy', search, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Search', new_search_path %>

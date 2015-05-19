@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @tag_relation.tag_id %>
+</p>
+
+<p>
+  <strong>Pile:</strong>
+  <%= @tag_relation.pile_id %>
+</p>
+
+<p>
+  <strong>Deck:</strong>
+  <%= @tag_relation.deck_id %>
+</p>
+
+<p>
+  <strong>Synergy:</strong>
+  <%= @tag_relation.synergy_id %>
+</p>
+
+<%= link_to 'Edit', edit_tag_relation_path(@tag_relation) %> |
+<%= link_to 'Back', tag_relations_path %>

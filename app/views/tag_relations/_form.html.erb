@@ -1,0 +1,33 @@
+<%= form_for(@tag_relation) do |f| %>
+  <% if @tag_relation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tag_relation.errors.count, "error") %> prohibited this tag_relation from being saved:</h2>
+
+      <ul>
+      <% @tag_relation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tag_id %><br>
+    <%= f.number_field :tag_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pile_id %><br>
+    <%= f.number_field :pile_id %>
+  </div>
+  <div class="field">
+    <%= f.label :deck_id %><br>
+    <%= f.number_field :deck_id %>
+  </div>
+  <div class="field">
+    <%= f.label :synergy_id %><br>
+    <%= f.number_field :synergy_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

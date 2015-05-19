@@ -1,0 +1,25 @@
+<%= form_for(@synergy) do |f| %>
+  <% if @synergy.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@synergy.errors.count, "error") %> prohibited this synergy from being saved:</h2>
+
+      <ul>
+      <% @synergy.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pile_id %><br>
+    <%= f.number_field :pile_id %>
+  </div>
+  <div class="field">
+    <%= f.label :compliment_id %><br>
+    <%= f.number_field :compliment_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

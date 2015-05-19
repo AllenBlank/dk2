@@ -1,0 +1,105 @@
+<%= form_for(@card) do |f| %>
+  <% if @card.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@card.errors.count, "error") %> prohibited this card from being saved:</h2>
+
+      <ul>
+      <% @card.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :expansion_id %><br>
+    <%= f.number_field :expansion_id %>
+  </div>
+  <div class="field">
+    <%= f.label :card_type %><br>
+    <%= f.text_field :card_type %>
+  </div>
+  <div class="field">
+    <%= f.label :types %><br>
+    <%= f.text_area :types %>
+  </div>
+  <div class="field">
+    <%= f.label :colors %><br>
+    <%= f.text_area :colors %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :rarity %><br>
+    <%= f.text_field :rarity %>
+  </div>
+  <div class="field">
+    <%= f.label :cmc %><br>
+    <%= f.text_field :cmc %>
+  </div>
+  <div class="field">
+    <%= f.label :mana_cost %><br>
+    <%= f.text_field :mana_cost %>
+  </div>
+  <div class="field">
+    <%= f.label :text %><br>
+    <%= f.text_area :text %>
+  </div>
+  <div class="field">
+    <%= f.label :flavor %><br>
+    <%= f.text_area :flavor %>
+  </div>
+  <div class="field">
+    <%= f.label :artist %><br>
+    <%= f.text_field :artist %>
+  </div>
+  <div class="field">
+    <%= f.label :rulings %><br>
+    <%= f.text_area :rulings %>
+  </div>
+  <div class="field">
+    <%= f.label :number %><br>
+    <%= f.number_field :number %>
+  </div>
+  <div class="field">
+    <%= f.label :power %><br>
+    <%= f.text_field :power %>
+  </div>
+  <div class="field">
+    <%= f.label :toughness %><br>
+    <%= f.text_field :toughness %>
+  </div>
+  <div class="field">
+    <%= f.label :reserved %><br>
+    <%= f.check_box :reserved %>
+  </div>
+  <div class="field">
+    <%= f.label :original_type %><br>
+    <%= f.text_field :original_type %>
+  </div>
+  <div class="field">
+    <%= f.label :original_text %><br>
+    <%= f.text_area :original_text %>
+  </div>
+  <div class="field">
+    <%= f.label :loyalty %><br>
+    <%= f.text_field :loyalty %>
+  </div>
+  <div class="field">
+    <%= f.label :newest %><br>
+    <%= f.check_box :newest %>
+  </div>
+  <div class="field">
+    <%= f.label :color_id %><br>
+    <%= f.text_area :color_id %>
+  </div>
+  <div class="field">
+    <%= f.label :formats %><br>
+    <%= f.text_area :formats %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

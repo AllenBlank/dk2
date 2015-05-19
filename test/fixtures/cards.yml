@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  expansion_id: 1
+  card_type: MyString
+  types: MyText
+  colors: MyText
+  name: MyString
+  rarity: MyString
+  cmc: 1.5
+  mana_cost: MyString
+  text: MyText
+  flavor: MyText
+  artist: MyString
+  rulings: MyText
+  number: 1
+  power: 1.5
+  toughness: 1.5
+  reserved: false
+  original_type: MyString
+  original_text: MyText
+  loyalty: 1.5
+  newest: false
+  color_id: MyText
+  formats: MyText
+
+two:
+  expansion_id: 1
+  card_type: MyString
+  types: MyText
+  colors: MyText
+  name: MyString
+  rarity: MyString
+  cmc: 1.5
+  mana_cost: MyString
+  text: MyText
+  flavor: MyText
+  artist: MyString
+  rulings: MyText
+  number: 1
+  power: 1.5
+  toughness: 1.5
+  reserved: false
+  original_type: MyString
+  original_text: MyText
+  loyalty: 1.5
+  newest: false
+  color_id: MyText
+  formats: MyText

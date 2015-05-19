@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pile:</strong>
+  <%= @synergy.pile_id %>
+</p>
+
+<p>
+  <strong>Compliment:</strong>
+  <%= @synergy.compliment_id %>
+</p>
+
+<%= link_to 'Edit', edit_synergy_path(@synergy) %> |
+<%= link_to 'Back', synergies_path %>

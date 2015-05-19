@@ -1,0 +1,27 @@
+<h1>Listing synergies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pile</th>
+      <th>Compliment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @synergies.each do |synergy| %>
+      <tr>
+        <td><%= synergy.pile_id %></td>
+        <td><%= synergy.compliment_id %></td>
+        <td><%= link_to 'Show', synergy %></td>
+        <td><%= link_to 'Edit', edit_synergy_path(synergy) %></td>
+        <td><%= link_to 'Destroy', synergy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Synergy', new_synergy_path %>

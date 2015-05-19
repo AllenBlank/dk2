@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  name_field: MyText
+  text_filed: MyText
+  type_field: MyText
+  format_field: MyText
+  color_field: MyText
+  color_exact_field: false
+  sort_by_field: MyString
+  sort_direction_field: MyString
+
+two:
+  user_id: 1
+  name_field: MyText
+  text_filed: MyText
+  type_field: MyText
+  format_field: MyText
+  color_field: MyText
+  color_exact_field: false
+  sort_by_field: MyString
+  sort_direction_field: MyString
