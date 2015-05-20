@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :cards
+  resources :cards, only: [:show]
 
   resources :searches
 
@@ -16,8 +16,6 @@ Rails.application.routes.draw do
   resources :decks
 
   resources :users
-
-  resources :items, only: [:index, :show, :create, :update, :destroy]
 
   root 'static#index'
 end

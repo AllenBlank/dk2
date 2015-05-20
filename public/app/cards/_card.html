@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-6">
+    <img ng-src="{{card.image_path}}"></img>
+  </div>
+  <div class="col-md-6">
+    <h1>{{ card.name || "Card Name" }}</h1>
+    <p>{{ card.card_type || "Card type" }}</p>
+    <p>{{ card.text || "Card Text" }}</p>
+    <section>
+      <h4>Playable In:</h4>
+      <ul>
+        <li ng-repeat="format in card.formats">{{format}}</li>
+      </ul>
+    </section>
+  </div>
+</div>

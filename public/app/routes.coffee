@@ -3,21 +3,9 @@ angular.module('Dk2').config ($routeProvider) ->
   .when '/', 
     templateUrl: '/app/index.html'
     controller: ->
-  .when '/items', 
-    templateUrl: '/app/items/index.html'
-    controller:  'itemsController'
-    action:      'index'
-  .when '/items/new', 
-    templateUrl: '/app/items/new.html'
-    controller:  'itemsController'
-    action:      'new'
-  .when '/items/:id/edit', 
-    templateUrl: '/app/items/edit.html'
-    controller:  'itemsController'
-    action:      'edit'
-  .when '/items/:id', 
-    templateUrl: '/app/items/show.html'
-    controller:  'itemsController'
+  .when '/cards/:id', 
+    templateUrl: '/app/cards/show.html'
+    controller:  'cardsController'
     action:      'show'
   .otherwise
     redirectTo: '/'

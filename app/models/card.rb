@@ -12,4 +12,8 @@ class Card < ActiveRecord::Base
   serialize :color_id
   serialize :formats
   
+  def image_path
+    "http://magiccards.info/scans/en/#{self.expansion.code}/#{self.number}.jpg"
+  end
+  
 end
