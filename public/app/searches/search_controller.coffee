@@ -1,4 +1,4 @@
-angular.module('Dk2')
+angular.module('Rangular')
 .controller 'itemsController', ($routeParams, $route, $scope, Item) ->
   
   @beforeActions = 

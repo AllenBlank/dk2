@@ -1,4 +1,4 @@
-angular.module('Dk2')
+angular.module('Rangular')
 .directive 'itemform', ->
   restrict: 'E'
   templateUrl: '/app/items/_form.html'

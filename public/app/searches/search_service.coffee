@@ -19,5 +19,5 @@ class ItemService
     item
     
     
-angular.module('Dk2')
+angular.module('Rangular')
 .service('Item', ItemService)
