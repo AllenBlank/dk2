@@ -1,3 +1,23 @@
-card p{
-  white-space: pre-wrap;
+card {
+  img {
+    width: 100%;
+  }
+
+  table {
+    margin-top: 1em;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    
+    th {
+      text-align: right;
+      vertical-align: top;
+    }
+    td {
+      padding-left: 1em;
+      p {
+        white-space: pre-wrap;
+      }
+    }
+  }
+
 }

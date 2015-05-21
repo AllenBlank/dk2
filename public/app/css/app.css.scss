@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster|Bree+Serif&subset=latin,latin-ext);
+html, body {
+  height: 100%;
+}
+body {
+  font-family: 'Bree Serif', serif;
+  font-size: 16px;
+  
+  a.navbar-brand {
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    font-size: 2em;
+    color: #333333;
+    padding: -1em;
+  }
+  a, a:hover {
+    color: #333333;
+  }
+  
+  .btn, .add-remove-button {
+    display: inline-block;
+  }
+}
