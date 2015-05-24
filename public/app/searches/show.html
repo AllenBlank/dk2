@@ -1,6 +1,26 @@
-<item item="item"></item>
 <div class="row">
-    <div class="col-md-12">
-        <a href="/#/items">Back to items index</a>
+    <div class="col-md-12 text-center">
+        <pagination total-items="search.results.length" items-per-page="perPage" ng-model="currentPage" max-size="3" class="pagination-sm" ng-change="pageChanged()"></pagination>
     </div>
 </div>
+
+<div ng-repeat="card in search.results" class="row" ng-if="$index % 2 == 0" ng-show="onPage($index)">
+    <div class="col-md-6">
+        <card card="search.results[$index]"></card>
+    </div>
+    <div class="col-md-6">
+        <card card="search.results[$index + 1]"></card>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        <pagination total-items="search.results.length" items-per-page="perPage" ng-model="currentPage" max-size="3" class="pagination-sm" ng-change="pageChanged()"></pagination>
+    </div>
+</div>
+
+<search-form 
+  title="Refine Search" 
+  search="search"
+  submit="updateSearch">
+</search-form>

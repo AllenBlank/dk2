@@ -20,7 +20,7 @@ class SearchesController < ApplicationController
 
   def update
     if @search.update(search_params)
-      render light_json
+      render full_json
     else
       render json: @search.errors, status: :unprocessable_entity
     end
@@ -37,7 +37,7 @@ class SearchesController < ApplicationController
     end
 
     def search_params
-      params.require(:search).permit(:user_id, :name_field, :text_filed, :type_field, :format_field, :color_field, :color_exact_field, :sort_by_field, :sort_direction_field)
+      params.require(:search).permit(:user_id, :name_field, :text_field, :type_field, :format_field, :color_field, :color_exact_field, :sort_by_field, :sort_direction_field)
     end
     
     def full_json

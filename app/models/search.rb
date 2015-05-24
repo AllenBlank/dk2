@@ -7,7 +7,7 @@ class Search < ActiveRecord::Base
     [:name_field, :text_field, :type_field, :format_field].each do |field|
       basic_refine field
     end
-    @results
+    @results.limit(50).as_json only: [:name, :card_type, :text, :flavor, :artist], methods: :image_path
   end
   
   private

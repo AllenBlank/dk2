@@ -1,23 +1,22 @@
-class ItemService
+class SearchService
   @$inject: ['$http']
   
   constructor: (@http) ->
 
   all: ->
-    @http.get '/items'
+    @http.get '/searches'
   find: (id) ->
-    @http.get '/items/' + id
-  create: (item) ->
-    @http.post '/items', item
-  update: (item) ->
-    @http.put '/items/' + item.id, item
-  destroy: (item) ->
-    @http.delete '/items/' + item.id
-  extend: (item) ->
-    item.showPath = '#/items/' + item.id
-    item.editPath = item.showPath + '/edit'
-    item
+    @http.get '/searches/' + id
+  create: (search) ->
+    @http.post '/searches', search
+  update: (search) ->
+    @http.put '/searches/' + search.id, search
+  destroy: (search) ->
+    @http.delete '/searches/' + search.id
+  extend: (search) ->
+    search.showPath = '#/searches/' + search.id
+    search.editPath = search.showPath + '/edit'
+    search
     
-    
-angular.module('Rangular')
-.service('Item', ItemService)
+angular.module('Dk2')
+.service('Search', SearchService)

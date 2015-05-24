@@ -1,1 +1,1 @@
-angular.module 'Dk2', [ 'ngRoute' ]
+angular.module 'Dk2', [ 'ngRoute', 'ui.bootstrap']

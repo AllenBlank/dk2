@@ -1,22 +1,21 @@
 <div class="row">
-  <form ng-submit="submit(item)" class="col-md-4 form-horizontal">
-    <fieldset>
-    
-      <!-- Form Name -->
-      <legend>{{title}}</legend>
-      
-      <!-- Text input-->
-      <div class="form-group">
-        <input ng-model="item.name" id="Name" name="item[name]" type="text" placeholder="Item name here..." class="form-control input-md">
-        <input ng-model="item.description" id="Description" name="item[description]" type="text" placeholder="Item description here..." class="form-control input-md">
-        <input ng-model="item.price" id="Price" name="item[price]" type="text" placeholder="Item price here..." class="form-control input-md">
-      </div>
-      
-      <!-- Button -->
-      <div class="form-group">
-        <input type="submit" id="Submit" name="Submit" class="btn btn-primary"></input>
-      </div>
-    
-    </fieldset>
-  </form>
+  <div class="col-md-4 col-md-offset-4">
+    <form ng-submit="submit(search)" novalidate>
+      <a><h3 href="javascript:void(0)" class="form-title">{{title}}</h3></a>
+      <fieldset>
+        <!-- Text input-->
+        <div class="form-group">
+          <input ng-model="search.name_field" id="NameField" name="search[name_field]" type="text" placeholder="Card Name" class="form-control input-md">
+          <input ng-model="search.text_field" id="TextField" name="search[text_field]" type="text" placeholder="Card Text" class="form-control input-md">
+          <input ng-model="search.type_field" id="TypeField" name="search[type_field]" type="text" placeholder="Card Type" class="form-control input-md">
+          <input ng-model="search.format_field" id="FormatField" name="search[format_field]" type="text" placeholder="Card Format" class="form-control input-md">
+        </div>
+        <!-- Button -->
+        <div class="form-group">
+          <input type="submit" id="Submit" name="Search!" class="btn"></input>
+        </div>
+  
+      </fieldset>
+    </form>
+  </div>
 </div>

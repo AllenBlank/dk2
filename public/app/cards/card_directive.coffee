@@ -12,3 +12,9 @@ angular.module('Dk2')
     image.fadeTo(0,0)
     image.on 'load', ->
       $(this).fadeTo(300,1)
+      
+    # this bit lazily loads the images
+    element.on 'inview', ->
+      img = $(this).find('img')[0]
+      img.src = scope.card.image_path unless img.src
+  

@@ -1,0 +1,14 @@
+.pagination {
+  li, li:hover {
+    a {
+      color: #333;
+    }
+  }
+
+  li.active, li.active:hover {
+    a {
+      background-color: #aaa;
+      border-color: #ddd;
+    }
+  }
+}
